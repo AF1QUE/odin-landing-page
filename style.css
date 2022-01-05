@@ -1,0 +1,29 @@
+/* CSS Reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Global CSS */
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  background-color: #0c0f38;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+li {
+  list-style-type: none;
+}
