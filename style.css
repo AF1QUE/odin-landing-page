@@ -29,6 +29,7 @@ li {
 }
 
 .btn {
+  transition: all 0.5s ease;
   font-size: 16px;
   font-weight: 500;
   background-color: #6fe7fc;
@@ -40,7 +41,14 @@ li {
   border: 2px solid #6fe7fc;
 }
 
+.btn:hover {
+  transition: all 0.5s ease;
+  background-color: #52adbd;
+  border: 2px solid #52adbd;
+}
+
 .btn--alt {
+  transition: all 0.5s ease;
   font-size: 16px;
   font-weight: 500;
   background-color: rgba(red, green, blue, 0%);
@@ -50,6 +58,12 @@ li {
   padding: 10px 25px;
   border-radius: 5px;
   border: 2px solid #ffffff;
+}
+
+.btn--alt:hover {
+  transition: all 0.5s ease;
+  color: #0c0f38;
+  background-color: #ffffff;
 }
 
 .btn,
@@ -116,6 +130,16 @@ li {
   margin: 0px 15px;
   font-size: 16px;
   font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__link a {
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .header__btn {
