@@ -225,10 +225,11 @@ h2 .packages {
 }
 
 .testimonial {
-  /* background-color: #151950; */
-  /* background-color: var(--magenta); */
   padding: 0px 100px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .testimonial-logo {
@@ -247,7 +248,7 @@ h2 .packages {
 .testimonial__author span {
   font-size: 20px;
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   font-weight: 400;
 
   text-align: center;
@@ -255,6 +256,20 @@ h2 .packages {
 
 .testimonial__company {
   text-align: center;
+}
+
+.testimonial__avatar {
+  align-self: center;
+  width: 100%;
+}
+
+.testimonial__avatar img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--aqua);
+  margin: 75px auto 0px auto;
 }
 
 /* C2A Styles */
