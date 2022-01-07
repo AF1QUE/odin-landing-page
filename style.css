@@ -70,6 +70,11 @@ li {
 
 /* Header styles */
 
+.header {
+  position: absolute;
+  min-width: 100%;
+}
+
 .header .container {
   height: 85px;
 
@@ -97,7 +102,7 @@ li {
 /* Hero styles */
 
 .hero .container {
-  height: 90vh;
+  height: 100vh;
 
   display: flex;
   align-items: center;
@@ -206,3 +211,37 @@ h2 .packages {
   flex-direction: column;
   align-items: center;
 }
+
+/* Review styles */
+
+.reviews {
+  padding: 100px 0px;
+}
+
+.reviews .container {
+  width: 950px;
+}
+
+.testimonial {
+  /* background-color: #151950; */
+  background-color: var(--magenta);
+  padding: 75px 100px;
+  border-radius: 5px;
+}
+
+.testimonial__para p {
+  font-size: 26px;
+  font-style: italic;
+  line-height: 36px;
+}
+
+.testimonial__author span {
+  font-size: 20px;
+  display: block;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+/* .testimonial__company {
+  margin-top: 5px;
+} */
