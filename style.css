@@ -219,20 +219,29 @@ h2 .packages {
 }
 
 .reviews .container {
-  width: 950px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial {
   /* background-color: #151950; */
-  background-color: var(--magenta);
-  padding: 75px 100px;
+  /* background-color: var(--magenta); */
+  padding: 0px 100px;
   border-radius: 5px;
 }
 
+.testimonial-logo {
+  width: 50px;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
 .testimonial__para p {
-  font-size: 26px;
+  font-size: 30px;
   font-style: italic;
-  line-height: 36px;
+  line-height: 46px;
+  text-align: center;
 }
 
 .testimonial__author span {
@@ -240,8 +249,17 @@ h2 .packages {
   display: block;
   margin-top: 40px;
   font-weight: 400;
+
+  text-align: center;
 }
 
-/* .testimonial__company {
-  margin-top: 5px;
-} */
+.testimonial__company {
+  text-align: center;
+}
+
+/* C2A Styles */
+
+.c2a {
+  background-color: #151742;
+  padding: 100px;
+}
