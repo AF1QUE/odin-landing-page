@@ -58,6 +58,16 @@ li {
   cursor: pointer;
 }
 
+/* Variables */
+:root {
+  --blue: #3a9beb;
+  --sky-blue: #5bc6f3;
+  --aqua: #6ee8fc;
+  --purple: #8167f6;
+  --pink: #d5088c;
+  --magenta: #a420aa;
+}
+
 /* Header styles */
 
 .header .container {
@@ -69,7 +79,7 @@ li {
 }
 
 .header__logo {
-  width: 200px;
+  width: 175px;
 }
 
 .nav__link {
@@ -99,7 +109,7 @@ li {
 }
 
 .hero__sub-title h2 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -126,4 +136,73 @@ li {
 .hero__btn--alt {
   margin-top: 40px;
   margin-left: 20px;
+}
+
+/* Pricing styles */
+
+.pricing {
+  height: inherit;
+  padding: 100px 0px;
+  background-color: #141742;
+}
+
+.pricing__main-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pricing__sub-title h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 .packages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.packages {
+  display: flex;
+  margin-top: 60px;
+}
+
+.package {
+  width: 350px;
+  background-color: #0c0f38;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0px 20px 40px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+}
+
+.package img {
+  width: 250px;
+}
+
+.package__name h3 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 5px 0px 5px 0px;
+}
+
+.package__price h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.package__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
