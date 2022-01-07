@@ -329,3 +329,23 @@ h2 .packages {
 .c2a__btn {
   margin-top: 40px;
 }
+
+/* Footer styles */
+
+.footer {
+  background-color: #141742;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 0px;
+}
+
+.footer span a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
