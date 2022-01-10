@@ -1,0 +1,144 @@
+/* Media query styles */
+
+@media (max-width: 480px) {
+  /* Global styles */
+
+  .container {
+    max-width: 480px;
+    margin: 0px auto;
+  }
+
+  /* Header styles */
+
+  .header {
+    padding: 0px 25px;
+  }
+
+  /* Hero styles */
+
+  .hero .container {
+    height: auto;
+    padding: 0px 25px 75px 25px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__sub-title h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .hero__main-title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  .hero__desc p {
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  .hero__img {
+    width: 420px;
+    padding: 140px 25px 60px 25px;
+  }
+
+  .hero__btn {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .hero__btn--alt {
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* Pricing styles */
+
+  .pricing {
+    height: inherit;
+    padding: 100px 0px;
+    background-color: #141742;
+  }
+
+  .pricing__main-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .pricing__sub-title h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h2 .packages {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .packages {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .package {
+    transition: all 0.5s ease;
+    width: 350px;
+    background-color: #0c0f38;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px 20px 40px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+  }
+
+  .package:hover {
+    transition: all 0.5s ease;
+    border: 1px solid var(--magenta);
+  }
+
+  .package img {
+    width: 250px;
+  }
+
+  .package__name h3 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 5px 0px 5px 0px;
+  }
+
+  .package__price h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .package__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
