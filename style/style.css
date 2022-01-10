@@ -338,7 +338,7 @@ h2 .packages {
   background-color: rgb(12, 15, 56);
   padding: 60px;
   border-radius: 5px;
-  background: url("/assets/c2a-banner-alt.png") rgb(12, 15, 56, 1);
+  background: url("assets/c2a-banner-alt.png") rgb(12, 15, 56, 1);
   background-size: 625px;
   background-repeat: no-repeat;
   background-position: calc(110%) calc(100% - 58%);
