@@ -3,6 +3,10 @@
 @media (max-width: 480px) {
   /* Global styles */
 
+  /* * {
+    overflow-x: hidden;
+  } */
+
   .container {
     max-width: 480px;
     margin: 0px auto;
@@ -12,6 +16,10 @@
 
   .header {
     padding: 0px 25px;
+  }
+
+  .nav__link {
+    display: none;
   }
 
   /* Hero styles */
@@ -69,14 +77,12 @@
 
   /* Pricing styles */
 
-  .pricing {
-    height: inherit;
-    padding: 100px 0px;
-    background-color: #141742;
+  .pricing .container {
+    padding: 0px 25px;
   }
 
   .pricing__main-title h2 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-weight: 600;
     text-align: center;
@@ -89,56 +95,98 @@
     text-align: center;
   }
 
-  h2 .packages {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .packages {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 60px;
   }
 
-  .package {
-    transition: all 0.5s ease;
-    width: 350px;
-    background-color: #0c0f38;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* C2A Styles */
 
-    padding: 0px 20px 40px 20px;
+  .c2a {
+    background-color: #151742;
+    padding: 75px 25px;
+  }
+
+  .c2a .container {
+    box-shadow: inset 0 0 0 2000px rgba(11, 15, 56, 0.856);
+  }
+
+  .c2a .container {
+    background-color: rgb(12, 15, 56);
+    padding: 30px;
     border-radius: 5px;
-    border: 1px solid var(--blue);
+    background: url("/assets/c2a-banner-alt.png") rgb(12, 15, 56, 1);
+    background-size: 625px;
+    background-repeat: no-repeat;
+    background-position: calc(110%) calc(100% - 58%);
   }
 
-  .package:hover {
-    transition: all 0.5s ease;
-    border: 1px solid var(--magenta);
+  .c2a__title h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
   }
 
-  .package img {
-    width: 250px;
+  /* Testimonial Section */
+
+  .reviews {
+    padding: 100px 0px;
   }
 
-  .package__name h3 {
-    text-align: center;
-    font-size: 26px;
-    font-weight: 500;
-    margin: 5px 0px 5px 0px;
+  .reviews .container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
   }
 
-  .package__price h3 {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 40px;
-  }
-
-  .package__info {
+  .testimonial {
+    padding: 0px 25px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+  }
+
+  .testimonial-logo {
+    width: 50px;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .testimonial__para p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  .testimonial__author span {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    font-weight: 400;
+
+    text-align: center;
+  }
+
+  .testimonial__company {
+    text-align: center;
+  }
+
+  .testimonial__avatar {
+    align-self: center;
+    width: 100%;
+  }
+
+  .testimonial__avatar img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--aqua);
+    margin: 75px auto 0px auto;
   }
 }

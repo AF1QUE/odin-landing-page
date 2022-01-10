@@ -6,6 +6,8 @@ $(".testimonials").slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
+  prevArrow: false,
+  nextArrow: false,
   responsive: [
     {
       breakpoint: 1024,
@@ -19,8 +21,8 @@ $(".testimonials").slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
     {
